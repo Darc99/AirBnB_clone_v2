@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" Review module for the airbnb project """
-from models.base_model import BaseModel
+"""This is the review class"""
 from sqlalchemy.ext.declarative import declarative_base
+from models.base_model import BaseModel, Base
 from sqlalchemy import Column, Integer, String, ForeignKey, Float
 
 
-class Review(BaseModel):
+class Review(BaseModel, Base):
     """This is the class for Review
     Attributes:
         place_id: place id
